@@ -6,14 +6,14 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 02:58:37 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 02:58:59 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:16:28 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
 
-int	ft_putnbr_base(int nbr, char *base)
+static int	ft_putnbr_base(int nbr, char *base)
 {
 	int		len;
 	long	nb;
@@ -39,7 +39,7 @@ int	ft_putnbr_base(int nbr, char *base)
 	return (count);
 }
 
-int	ft_putnbrhex_minus(int n)
+int	ft_putnbrhex_mayus(int n)
 {
 	int count;
 	char *base;

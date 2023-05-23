@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_mayus.c                                  :+:      :+:    :+:   */
+/*   ft_putnbrhex_minus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 22:26:14 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 02:08:40 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:16:45 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
 
-int	ft_putnbr_base(int nbr, char *base)
+static int	ft_putnbr_base(int nbr, char *base)
 {
 	int		len;
 	long	nb;

@@ -6,10 +6,11 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 18:48:28 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 01:57:14 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:22:34 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 #include <unistd.h>
 
 int	ft_putchar(char c)

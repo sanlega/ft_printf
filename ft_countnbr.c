@@ -6,9 +6,11 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 20:23:08 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/22 20:25:09 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:22:51 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "ft_printf.h"
 
 int ft_countnbr(long int n)
 {

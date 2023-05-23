@@ -6,11 +6,11 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/23 00:54:01 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 00:59:35 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:21:24 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_strlen(char *str)
 {

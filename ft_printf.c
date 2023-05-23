@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 17:58:40 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 03:07:43 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:30:42 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-int ft_charcheck(char c, va_list args)
+static int ft_charcheck(char c, va_list args)
 {
 	if (c == 'c')
 		return (ft_putchar(va_arg(args, int)));
@@ -37,7 +37,7 @@ int ft_charcheck(char c, va_list args)
 	return (0);
 }
 
-int	ft_formatcheck(char *str, va_list variables)
+static int	ft_formatcheck(char *str, va_list args)
 {
 	int i;
 	int length;
@@ -53,7 +53,7 @@ int	ft_formatcheck(char *str, va_list variables)
 		}
 		if (str[i] == '%')
 		{
-			length += ft_charcheck(str[i + 1], variables);
+			length += ft_charcheck(str[i + 1], args);
 			i += 2;
 		}
 	}
@@ -71,42 +71,48 @@ int	ft_printf(char const *format, ...)
 	return (length);
 }
 
-// int main()
-// {
-//     // Printing a character
-//     char c = 'A';
-//     ft_printf("The character is: %c\n", c);
-//
-//     // // Printing a string
-//     // char *str = "Hello, world!";
-//     // ft_printf("The string is: %s\n", str);
-//     //
-//     // // Printing a pointer
-//     // int *p = &c;
-//     // ft_printf("The pointer is: %p\n", p);
-//     //
-//     // // Printing a decimal number
-//     // int d = 1234;
-//     // ft_printf("The decimal number is: %d\n", d);
-//     //
-//     // // Printing an integer
-//     // int i = 5678;
-//     // ft_printf("The integer is: %i\n", i);
-//     //
-//     // // Printing an unsigned number
-//     // unsigned int u = 1234567890;
-//     // ft_printf("The unsigned number is: %u\n", u);
-//     //
-//     // // Printing a hexadecimal number (lowercase)
-//     // int x = 0x123;
-//     // ft_printf("The hexadecimal number (lowercase) is: %x\n", x);
-//     //
-//     // // Printing a hexadecimal number (uppercase)
-//     // int X = 0xABC;
-//     // ft_printf("The hexadecimal number (uppercase) is: %X\n", X);
-//     //
-//     // // Printing a percentage symbol
-//     // ft_printf("The percentage symbol is: %%\n");
-//
-//     return 0;
-// }
+int main()
+{
+	// Printing a character
+	char c = 'A';
+	ft_printf("The character is: %c\n", c);
+	printf("The character is: %c\n", c);
+	printf("%d\n", ft_printf("The character is: %c\n", c));
+
+	// // Printing a string
+	// char *str = "Hello, world!";
+	// ft_printf("The string is: %s\n", str);
+	// printf("The string is: %s\n", str);
+	//
+	// // Printing a pointer
+	// int *p = &c;
+	// ft_printf("The pointer is: %p\n", p);
+	// printf("The pointer is: %p\n", p);
+	//
+	// // Printing a decimal number
+	// int d = 1234;
+	// ft_printf("The decimal number is: %d\n", d);
+	// printf("The decimal number is: %d\n", d);
+	//
+	// // Printing an integer
+	// int i = 5678;
+	// ft_printf("The integer is: %i\n", i);
+	// printf("The integer is: %i\n", i);
+	//
+	// // Printing an unsigned number
+	// unsigned int u = 1234567890;
+	// ft_printf("The unsigned number is: %u\n", u);
+	//
+	// // Printing a hexadecimal number (lowercase)
+	// int x = 0x123;
+	// ft_printf("The hexadecimal number (lowercase) is: %x\n", x);
+	//
+	// // Printing a hexadecimal number (uppercase)
+	// int X = 0xABC;
+	// ft_printf("The hexadecimal number (uppercase) is: %X\n", X);
+	//
+	// // Printing a percentage symbol
+	// ft_printf("The percentage symbol is: %%\n");
+
+	return 0;
+}
