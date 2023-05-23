@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 18:48:58 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 03:44:28 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 17:57:40 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <stdarg.h>
+# include <limits.h>
 
 int	ft_putchar(char c);
 int	ft_putstr(char *str);
@@ -26,5 +27,6 @@ int	ft_putnbrhex_mayus(int n);
 int	ft_putnbr(int n);
 int	ft_putnbr_unsg(unsigned int n);
 int	ft_putptr(void *ptr);
+int	ft_printf(char const *format, ...);
 
 #endif
