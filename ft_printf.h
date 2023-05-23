@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 18:48:58 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/23 02:46:51 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:44:28 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ int	ft_putstr(char *str);
 int	ft_strlen(char *str);
 int	ft_putnbrhex_minus(int n);
 int	ft_putnbrhex_mayus(int n);
-int ft_putnbr(int n);
+int	ft_putnbr(int n);
 int	ft_putnbr_unsg(unsigned int n);
-int ft_putptr(void *ptr);
+int	ft_putptr(void *ptr);
 
 #endif

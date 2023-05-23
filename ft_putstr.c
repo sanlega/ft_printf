@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/22 19:49:13 by slegaris          #+#    #+#             */
-/*   Updated: 2023/05/22 19:51:23 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/05/23 03:50:56 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	while (!str)
+	while (str[i] != '\0')
 	{
 		ft_putchar(str[i]);
 		i++;
